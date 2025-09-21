@@ -117,29 +117,36 @@ Brand: Ford
 
 ---
 
-## 2) **Single Inheritance (Vehicle → Car)**
+## **2) Single Inheritance Example: Animal → Dog**
 
 **Algorithm:**
 
 1. Start.
-2. Create base class `Vehicle` with `brand` and `color()`.
-3. Create derived class `Car` (public inheritance) with `model` and `speed()`.
+2. Create base class `Animal` with:
+
+   * Data member: `species` (string).
+   * Function: `sound()` to display the animal’s sound.
+3. Create derived class `Dog` (public inheritance) with:
+
+   * Data member: `breed` (string).
+   * Function: `activity()` to display the dog’s activity.
 4. In `main()`:
 
-   * Create `Car` object.
-   * Call `color()`, access `brand` and `model`, call `speed()`.
+   * Create object `myDog` of class `Dog`.
+   * Call `myDog.sound()` to display inherited function output.
+   * Display `myDog.species` (inherited data).
+   * Display `myDog.breed` (derived class data).
+   * Call `myDog.activity()` to display derived function output.
 5. Stop.
 
 **Sample Output:**
 
 ```
-Color: Blue
-Brand: Ford
-Model: EcoSport
-Max speed is 180km/h
+Sound: Woof Woof
+Species: Dog
+Breed: Labrador
+Activity: Loves to play fetch
 ```
-
----
 
 ## 3) **Multiple Inheritance (Animal + Pet → Dog)**
 
